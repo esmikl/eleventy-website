@@ -1,0 +1,28 @@
+{
+  "name": "Emily Mikl Eleventy Website",
+  "version": "1.0.0",
+  "description": "Static professional website built with Eleventy.",
+  "main": "index.js",
+  "scripts": {
+    "build": "eleventy && NODE_ENV=production npm run postcss:run",
+    "start": "npm run remove:site && mkdir _site && npm run postcss:run && npm run copyfiles && eleventy --serve",
+    "remove:site": "rm -rf _site",
+    "postcss:run": "postcss styles/style.css > _site/style.css",
+    "copyfiles": "copyfiles images/* _site"
+  },
+  "keywords": [],
+  "author": "Emily Mikl",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1",
+    "autoprefixer": "^10.4.0",
+    "copyfiles": "^2.4.1",
+    "cssnano": "^5.0.12",
+    "postcss": "^8.4.4",
+    "postcss-cli": "^9.0.2",
+    "tailwindcss": "^2.2.19"
+  },
+  "dependencies": {
+    "luxon": "^1.28.0"
+  }
+}

@@ -1,0 +1,19 @@
+---
+layout: layouts/base.njk
+---
+
+<section>
+  <div>
+    <article>
+      <h1>{{ title }}</h1>
+      <p>Published on: <time datetime="{{page.date}}">{{page.date | readableDate}}</time></p>
+      <ul>
+        {%- for tag in tags -%}
+        {%- set tagUrl %}/tags/{{ tag | slug }}/{% endset -%}
+        <li><a href="{{ tagUrl | url }}">{{ tag }}</a></li>
+        {%- endfor %}
+      </ul>
+      {{ content | safe }}
+    </article>
+  </div>
+</section>
