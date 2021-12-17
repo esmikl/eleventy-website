@@ -7,11 +7,11 @@
   <title>{{ site.title }}</title>
 </head>
 <body class="bg-pink-light font-serif font-normal">
-  <header class="flex items-center justify-around max-w-screen-2xl m-auto p-4">
-    <a href="/"><img src="/images/M.svg" alt="M logo" class="w-12"></a>
+  <header class="flex items-center justify-between md:container md:mx-auto py-4 px-8 md:px-6">
+    <a href="/"><img src="/images/M.svg" alt="M logo" class="w-16"></a>
     {% include "nav.njk" %}
   </header>
-  <main>
+  <main class="md:container md:mx-auto p-8 md:p-6">
     {{ content | safe }}
   </main>
 </body>
