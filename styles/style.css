@@ -30,4 +30,62 @@
     .icon:active svg {
         fill: #a7035e;
     }
+
+    .content a {
+        @apply underline;
+        @apply text-pink-dark;
+    }
+
+    .content a:hover {
+        @apply no-underline;
+    }
+
+    p {
+        @apply my-4;
+        @apply text-lg;
+    }
+
+    dl {
+        @apply text-lg;
+    }
+
+    dt {
+        @apply font-bold;
+        @apply text-xl;
+    }
+
+    .year {
+        @apply font-normal;
+    }
+
+    .title {
+        @apply text-3xl;
+        @apply font-display;
+    }
+
+    dd {
+        @apply ml-4;
+    }
+
+    .profile-pic {
+        @apply w-72;
+        @apply h-72;
+        @apply m-auto;
+        border-radius: 50%;
+    }
+
+    hr {
+        @apply bg-pink-primary;
+        border: none;
+        height: 2px;
+        margin: 2rem 0;
+    }
+
+    @media screen and (min-width: 600px) {
+        .profile-pic {
+            @apply float-left;
+            @apply ml-0;
+            @apply mr-5;
+        }
+    }
 }
