@@ -22,10 +22,9 @@ module.exports = {
       }
     },
     fontFamily: {
-      'sans': ['Open Sans', 'Helvetica Neue', 'sans-serif'],
-      'serif': ['Acumin Pro Light', 'serif'],
+      'sans': ['acumin-pro, sans-serif'],
       'display': ['Adelle Sans'],
-      'body': ['Acumin Pro', 'serif']
+      'body': ['acumin-pro, sans-serif']
     },
     minHeight: {
       'nav': '64px'

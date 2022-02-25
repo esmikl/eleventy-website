@@ -4,14 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="https://use.typekit.net/kka3jmk.css">
   <title>{{ site.title }}</title>
 </head>
-<body class="bg-pink-light font-serif font-normal">
-  <header class="flex items-center justify-between md:container md:mx-auto py-4 px-8 md:px-6">
-    <a href="/"><img src="/images/M.svg" alt="M logo" class="w-16"></a>
+<body class="bg-pink-light font-body font-normal">
+  <div aria-hidden="true" class="bg-pink-primary h-8"></div>
+  <header class="flex flex-col sm:flex-row items-center justify-between mx-auto max-w-7xl py-4 px-8 md:px-6 mt-3 mb-5">
+    <a href="/"><img src="/images/M.svg" alt="M logo" class="w-16 lg:w-20"></a>
     {% include "nav.njk" %}
   </header>
-  <main class="md:container md:mx-auto p-8 md:p-6">
+  <main class="mx-auto max-w-7xl p-8 md:p-6">
     {{ content | safe }}
   </main>
 </body>

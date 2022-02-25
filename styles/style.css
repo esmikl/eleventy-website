@@ -2,3 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 @tailwind screens;
+
+@layer base {
+    .skills li:not(:last-child)::after {
+        content: '|';
+        margin: 0.5rem;
+    }
+
+    header {
+        border-top: 5rem;
+    }
+
+    .engineer {
+        @apply border-pink-primary;
+        border-top-width: 2px;
+        border-bottom-width: 2px;
+    }
+
+    .icon svg {
+        transition: fill .15s cubic-bezier(.4,0,.2,1);
+    }
+
+    .icon:hover svg {
+        fill: #a7035e;
+    }
+
+    .icon:active svg {
+        fill: #a7035e;
+    }
+}
