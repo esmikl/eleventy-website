@@ -24,6 +24,7 @@
   },
   "dependencies": {
     "luxon": "^1.28.0",
-    "markdown-it": "^12.3.2"
+    "markdown-it": "^12.3.2",
+    "terser": "^5.11.0"
   }
 }

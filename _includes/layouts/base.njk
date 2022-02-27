@@ -6,12 +6,33 @@
   <link rel="stylesheet" href="/style.css">
   <link rel="stylesheet" href="https://use.typekit.net/kka3jmk.css">
   <title>{{ site.title }}</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  {% set js %}
+    {% include "menu.js" %}
+  {% endset %}
+  <script>
+      {{ js | safe }}
+  </script>
 </head>
 <body class="bg-pink-light font-body font-normal">
   <div aria-hidden="true" class="bg-pink-primary h-8"></div>
-  <header class="flex flex-col sm:flex-row items-center justify-between mx-auto max-w-7xl py-4 px-8 md:px-6 mt-3 mb-5">
-    <a href="/"><img src="/images/M.svg" alt="M logo" class="w-16 lg:w-20"></a>
-    {% include "nav.njk" %}
+  <header class="mx-auto max-w-7xl py-4 px-8 md:px-6 md:mt-3 md:mb-5">
+    <div class="mobile-nav md:hidden flex flex-col">
+      <div class="flex items-center justify-between">
+        <a href="/"><img src="/images/M.svg" alt="M logo" class="w-16 lg:w-20"></a>
+        <button id="menu-button" class="flex flex-col md:hidden" aria-expanded="false">
+          <span class="sr-only">Menu</span>
+          <span class="w-12 h-px border-t-4 rounded-3xl mb-2"></span>
+          <span class="w-12 h-px border-t-4 rounded-3xl mb-2"></span>
+          <span class="w-12 h-px border-t-4 rounded-3xl"></span>
+        </button>
+      </div>
+      {% include "nav.njk" %}
+    </div>
+    <div class="hidden md:flex items-center justify-between">
+      <a href="/"><img src="/images/M.svg" alt="M logo" class="w-16 lg:w-20"></a>
+      {% include "nav.njk" %}
+    </div>
   </header>
   <main class="mx-auto max-w-7xl p-8 md:p-6">
     {{ content | safe }}
