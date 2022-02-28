@@ -4,7 +4,7 @@
   "description": "Static professional website built with Eleventy.",
   "main": "index.js",
   "scripts": {
-    "build": "eleventy && NODE_ENV=production npm run postcss:run",
+    "build": "eleventy && NODE_ENV=production npm run postcss:run && npm run copyfiles",
     "start": "npm run remove:site && mkdir _site && npm run postcss:run && npm run copyfiles && eleventy --serve",
     "remove:site": "rm -rf _site",
     "postcss:run": "postcss styles/style.css > _site/style.css",

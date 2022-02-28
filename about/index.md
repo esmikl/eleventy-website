@@ -2,7 +2,7 @@
 title: About Me
 layout: layouts/page.njk
 ---
-<img class="profile-pic" src="/images/Emily-88-cropped-more.jpg" alt="Emily Mikl">
+<img class="profile-pic" src="../images/Emily-88-cropped-more.jpg" alt="Emily Mikl">
 <p>Hello! I'm Emily Mikl, a Front End Developer based out of Eau Claire, Wis. I'm currently employed
 at Nelnet, Inc., as the lead developer of our corporate design system, <a href="https://unifi.nelnet.io/" target="_blank">Unifi</a>. Outside of work I'm a wife, mom to four kids, dog mom to a golden doodle, student, and volunteer.</p>
 <p>I changed careers after 13 years in the newspaper business when I was tasked with updating our online newspaper on a content management system. I didn't like being confined within the templates, and wanted to learn <em>how</em> this system worked behind the scenes. In the spring of 2013, I quit my job and went back to school to earn my Associates Degree in Software Development from Chippewa Valley Technical College in Eau Claire, Wis.</p>

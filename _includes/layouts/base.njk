@@ -11,7 +11,7 @@
     {% include "menu.js" %}
   {% endset %}
   <script>
-      {{ js | safe }}
+      {{ js | jsmin | safe }}
   </script>
 </head>
 <body class="bg-pink-light font-body font-normal">
@@ -20,7 +20,7 @@
     <div id="dialog" role="dialog" aria-modal="true" class="mobile-nav md:hidden flex flex-col">
       <div class="flex items-center justify-between">
         <a class="home-link" href="/">
-          <img src="/images/M.svg" alt="M logo" class="w-16 lg:w-20">
+          <img src="images/M.svg" alt="M logo" class="w-16 lg:w-20">
         </a>
         <button id="menu-button" class="flex flex-col md:hidden" aria-expanded="false">
           <span class="sr-only">Open Menu</span>
@@ -32,7 +32,7 @@
       {% include "nav.njk" %}
     </div>
     <div class="hidden md:flex items-center justify-between">
-      <a class="home-link" href="/"><img src="/images/M.svg" alt="M logo" class="w-16 lg:w-20"></a>
+      <a class="home-link" href="/"><img src="images/M.svg" alt="M logo" class="w-16 lg:w-20"></a>
       {% include "nav.njk" %}
     </div>
   </header>
