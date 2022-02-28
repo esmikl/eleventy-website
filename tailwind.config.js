@@ -23,7 +23,7 @@ module.exports = {
     },
     fontFamily: {
       'sans': ['acumin-pro, sans-serif'],
-      'display': ['Adelle Sans'],
+      'display': ['adelle-sans, sans-serif'],
       'body': ['acumin-pro, sans-serif']
     },
     minHeight: {
