@@ -17,11 +17,13 @@
 <body class="bg-pink-light font-body font-normal">
   <div aria-hidden="true" class="bg-pink-primary h-8"></div>
   <header class="mx-auto max-w-7xl py-4 px-8 md:px-6 md:mt-3 md:mb-5">
-    <div class="mobile-nav md:hidden flex flex-col">
+    <div id="dialog" role="dialog" aria-modal="true" class="mobile-nav md:hidden flex flex-col">
       <div class="flex items-center justify-between">
-        <a href="/"><img src="/images/M.svg" alt="M logo" class="w-16 lg:w-20"></a>
+        <a class="home-link" href="/">
+          <img src="/images/M.svg" alt="M logo" class="w-16 lg:w-20">
+        </a>
         <button id="menu-button" class="flex flex-col md:hidden" aria-expanded="false">
-          <span class="sr-only">Menu</span>
+          <span class="sr-only">Open Menu</span>
           <span class="w-12 h-px border-t-4 rounded-3xl mb-2"></span>
           <span class="w-12 h-px border-t-4 rounded-3xl mb-2"></span>
           <span class="w-12 h-px border-t-4 rounded-3xl"></span>
@@ -30,7 +32,7 @@
       {% include "nav.njk" %}
     </div>
     <div class="hidden md:flex items-center justify-between">
-      <a href="/"><img src="/images/M.svg" alt="M logo" class="w-16 lg:w-20"></a>
+      <a class="home-link" href="/"><img src="/images/M.svg" alt="M logo" class="w-16 lg:w-20"></a>
       {% include "nav.njk" %}
     </div>
   </header>

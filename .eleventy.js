@@ -23,4 +23,5 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter('readableDate', (dateObj) => {
     return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toLocaleString(DateTime.DATE_FULL);
   });
+  eleventyConfig.addPassthroughCopy({ "favicon.ico": "favicon.ico" });
 }
