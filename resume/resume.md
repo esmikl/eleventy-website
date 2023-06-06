@@ -18,8 +18,8 @@ layout: layouts/page.njk
     <dt>Front End Developer</dt>
     <dd>Lead developer for the corporate design system, Unifi. Built and fully documented reusable, accessible components that delivered a consistent look and feel for Nelnet products. 
         Some of my accomplishments at Nelnet include:
-        <ul>
-            <li>Creating our Unifi Angular component library from scratch. You can view my components at work by visiting angular.unifi.nelnet.io.</li>
+        <ul class="list-disc pl-10">
+            <li>Creating our Unifi Angular component library from scratch. You can view my components at work by visiting <a href="https://angular.unifi.nelnet.io/">angular.unifi.nelnet.io</a>.</li>
             <li>Evangelizing the usage of our Unifi Design System throughout the organization. Mentoring and teaching developers how to use the design system.</li>
             <li>Migrating our clients’ marketing products to HubSpot CMS which freed up our dev team to work on higher priority efforts.</li>
             <li>Leading our office remodel effort, which included gathering requirements, facilitating discussion and compromise, and working with our facilities team on the remodel plans and budget.</li>
